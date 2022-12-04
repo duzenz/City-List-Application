@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/create-city-schema.xml
+  - include:
+      file: db/changelog/insert-city-data.xml

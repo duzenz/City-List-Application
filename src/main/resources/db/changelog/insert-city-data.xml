@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="zafer" id="02">
+        <loadData file="cities.csv" tableName="city"/>
+    </changeSet>
+    <!--
+    <changeSet id="02" author="zafer">
+        <comment>Inserting cities</comment>
+        <insert tableName="city">
+            <column name="name" value="City 1"/>
+            <column name="photo" value="City 1 Photo"/>
+        </insert>
+        <insert tableName="city">
+            <column name="name" value="City 2"/>
+            <column name="photo" value="City 2 Photo"/>
+        </insert>
+        <insert tableName="city">
+            <column name="name" value="City 3"/>
+            <column name="photo" value="City 3 Photo"/>
+        </insert>
+    </changeSet>
+    -->
+</databaseChangeLog>
